@@ -1,3 +1,5 @@
 .vim/autoload
 .vim/plugged
 .vim/view
+.zsh/antigen.zsh
+.zsh/z.sh

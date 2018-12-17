@@ -1,0 +1,40 @@
+# Plugin Manager
+source ~/.zsh/antigen.zsh
+
+# Load oh-my-zsh library
+antigen use oh-my-zsh
+
+antigen bundle git
+antigen bundle heroku
+antigen bundle pip
+antigen bundle lein
+antigen bundle command-not-found
+
+antigen bundle zsh-users/zsh-syntax-highlighting
+antigen bundle zsh-users/zsh-autosuggestions
+antigen bundle zsh-users/zsh-completions
+antigen bundle zsh-users/zsh-history-substring-search
+
+#antigen theme robbyrussell
+antigen theme frisk
+
+antigen apply
+
+source ~/.zsh/z.sh
+
+bindkey "^[0H" beginning-of-line
+bindkey "^[OF" end-of-line
+
+autoload -U select-word-style
+select-word-style bash
+
+setopt no_nomatch
+
+setopt hist_ignore_space
+alias cd=" cd"
+alias ls=" ls"
+
+setopt INC_APPEND_HISTORY
+
+
+export GOPATH="$HOME/Code/Golang"
