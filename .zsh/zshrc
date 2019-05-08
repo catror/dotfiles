@@ -22,8 +22,6 @@ antigen theme frisk
 
 antigen apply
 
-fast-theme q-jmnemonic
-
 source ~/.zsh/z.sh
 
 bindkey "^[0H" beginning-of-line
