@@ -10,15 +10,19 @@ antigen bundle pip
 antigen bundle lein
 antigen bundle command-not-found
 
-antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle zsh-users/zsh-autosuggestions
 antigen bundle zsh-users/zsh-completions
 antigen bundle zsh-users/zsh-history-substring-search
+
+#antigen bundle zsh-users/zsh-syntax-highlighting
+antigen bundle zdharma/fast-syntax-highlighting
 
 #antigen theme robbyrussell
 antigen theme frisk
 
 antigen apply
+
+fast-theme q-jmnemonic
 
 source ~/.zsh/z.sh
 
@@ -38,3 +42,6 @@ setopt INC_APPEND_HISTORY
 
 
 export GOPATH="$HOME/Code/Golang"
+
+
+PATH=$PATH:/opt/010editor;export PATH; # ADDED BY INSTALLER - DO NOT EDIT OR DELETE THIS COMMENT - 87FF8EFC-483D-BCAA-D67D-735CF60410D1 9FBC1527-CB43-E2B1-2A1C-36F2938C7718
